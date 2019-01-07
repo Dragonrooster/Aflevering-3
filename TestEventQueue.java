@@ -15,7 +15,7 @@ public class TestEventQueue{
             i++;
         }
 
-        //Testing iterable implementation
+        //Testing iterable implementation and next()
         for ( Event e : eq ) {
             System.out.println( (eq.next()).time() );
         }

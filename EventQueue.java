@@ -73,7 +73,7 @@ public class EventQueue implements Iterable<Event> {
             return ( current != null );
         }
 
-        //Returns and removes the first event in the event queue. Precondition: Must have a next event.
+        //Returns the next event in the event queue. Precondition: Must have a next event.
         public Event next(){
             Node temp = current;
             current = current.next;

@@ -111,7 +111,7 @@ public class Population{
 			
 			i++;
 		}
-		
+
 	}
 	
 	
@@ -147,7 +147,16 @@ public class Population{
 	
 	//Returns best path of this population.
 	public City[] bestPath(){
-		return this.bestPath;
+		City[] bpCopy = new City[ this.bestPath.length ];
+
+		int k = 0;
+		while( k < this.bestPath.length ){
+
+			bpCopy[ k ] = bestPath[ k ];
+			k++;
+		}
+
+		return bpCopy;
 	}
 	
 	
@@ -165,7 +174,4 @@ public class Population{
 		return str;
 	}
 
-
-
-} 
-
+}
